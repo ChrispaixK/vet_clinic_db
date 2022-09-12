@@ -3,7 +3,7 @@
 SELECT * FROM animals
 WHERE name::text LIKE '%mon';
 SELECT name FROM animals
-WHERE date_of_birth >= '2016-01-01' OR date_of_birth <= '2019-12-31';
+WHERE date_of_birth >= '2016-01-01' AND date_of_birth <= '2019-12-31';
 SELECT name FROM animals
 WHERE neutered = '1' AND escape_attempts < 3;
 SELECT date_of_birth FROM animals
